@@ -1,13 +1,11 @@
 pluginManagement {
-	repositories {
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-		mavenCentral()
-		gradlePluginPortal()
-	}
+    repositories {
+        // Fabric Maven sunucusunu en başta tanımlıyoruz ki -SNAPSHOT sürümleri bulabilsin
+        maven {
+            url 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+    }
 }
 
-// Should match your modid
-rootProject.name = 'modid'
+rootProject.name = 'custom-client'
